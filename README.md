@@ -1,2 +1,2 @@
-# React-Native
-Practicing  React-Native 
+Learning Native Application Development
+This repository is a personal learning space for exploring and building native applications. It includes hands-on experiments, code samples, and projects aimed at mastering native development concepts, tools, and best practices. The goal is to embrace continuous learning and create meaningful applications while documenting the journey for others to follow. Contributions and feedback are welcome!
