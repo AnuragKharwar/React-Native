@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "weatherApp",
-    "slug": "weatherApp",
-    "scheme": "weatherApp",
+    "name": "RealState",
+    "slug": "RealState",
+    "scheme": "RealState",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
