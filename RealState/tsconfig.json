@@ -1,0 +1,29 @@
+{
+  
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.json",
+    "nativewind-env.d.ts",
+    "image.d.ts"
+  ],
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "./",
+    "paths":{
+      "~/*": ["app/*"],
+      "@/*":["src/*"],
+      "@/components*": ["components/*"],
+      "@/assets/*": ["assets/*"],
+      "@/constants/*": ["constants/*"],
+      "@/hooks/*": ["hooks/*"],
+
+
+      
+    }
+  },
+  
+}
