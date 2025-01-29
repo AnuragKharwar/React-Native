@@ -1,13 +1,13 @@
+import { AuthContext, AuthType } from "@/lib/providers/authProvider";
 import { Redirect, Slot } from "expo-router";
+import { useContext } from "react";
 import { ActivityIndicator } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function AppLayout() {
-  //   const { loading, isLogged } = useGlobalContext();
-  const { loading, isLogged } = {
-    loading: false,
-    isLogged: false,
-  };
+  const { user, loading } = useContext<AuthType>(AuthContext as any);
+
+  console.log("user from main loyout", user);
 
   if (loading) {
     return (
@@ -17,7 +17,7 @@ export default function AppLayout() {
     );
   }
 
-  if (!isLogged) {
+  if (!user) {
     return <Redirect href="/sign-in" />;
   }
 

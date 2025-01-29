@@ -1,58 +1,72 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent, useContext, useEffect } from "react";
 import { Image, ScrollView, Text, View, TouchableOpacity } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import images from "@/constants/images";
 import icons from "@/constants/icons";
+import { AuthContext, AuthType } from "@/lib/providers/authProvider";
+import { Redirect } from "expo-router";
 
-export class SignIn extends PureComponent {
-  render() {
-    return (
-      <SafeAreaView className="bg-white h-full">
-        <ScrollView
-          contentContainerStyle={{
-            height: "100%",
-          }}
-        >
-          <Image
-            source={images.onboarding}
-            className="w-full h-4/6"
-            resizeMode="contain"
-          />
+const SignIn = () => {
+  const { user, login } = useContext<AuthType>(AuthContext as any);
 
-          <View className="px-10">
-            <Text className="text-base text-center uppercase font-rubik text-black-200">
-              Welcome To Real Scout
-            </Text>
+  if (user) return <Redirect href="/" />;
 
-            <Text className="text-3xl font-rubik-bold text-black-300 text-center mt-2">
-              Let's Get You Closer To {"\n"}
-              <Text className="text-primary-300">Your Ideal Home</Text>
-            </Text>
+  const handleLogin = () => {
+    login({
+      firstName: "John",
+      lastName: "Doe",
+      email: "john@doe.com",
+      mobile: "1234567890",
+      token: "1234567890",
+    });
+  };
 
-            <Text className="text-lg font-rubik text-black-200 text-center mt-12">
-              Login to Real Scout with Google
-            </Text>
+  return (
+    <SafeAreaView className="bg-white h-full">
+      <ScrollView
+        contentContainerStyle={{
+          height: "100%",
+        }}
+      >
+        <Image
+          source={images.onboarding}
+          className="w-full h-4/6"
+          resizeMode="contain"
+        />
 
-            <TouchableOpacity
-              // onPress={handleLogin}
-              className="bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-5"
-            >
-              <View className="flex flex-row items-center justify-center">
-                <Image
-                  source={icons.google}
-                  className="w-5 h-5"
-                  resizeMode="contain"
-                />
-                <Text className="text-lg font-rubik-medium text-black-300 ml-2">
-                  Continue with Google
-                </Text>
-              </View>
-            </TouchableOpacity>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    );
-  }
-}
+        <View className="px-10">
+          <Text className="text-base text-center uppercase font-rubik text-black-200">
+            Welcome To Real Scout
+          </Text>
+
+          <Text className="text-3xl font-rubik-bold text-black-300 text-center mt-2">
+            Let's Get You Closer To {"\n"}
+            <Text className="text-primary-300">Your Ideal Home</Text>
+          </Text>
+
+          <Text className="text-lg font-rubik text-black-200 text-center mt-12">
+            Login to Real Scout with Google
+          </Text>
+
+          <TouchableOpacity
+            onPress={handleLogin}
+            className="bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-5"
+          >
+            <View className="flex flex-row items-center justify-center">
+              <Image
+                source={icons.google}
+                className="w-5 h-5"
+                resizeMode="contain"
+              />
+              <Text className="text-lg font-rubik-medium text-black-300 ml-2">
+                Continue with Google
+              </Text>
+            </View>
+          </TouchableOpacity>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
 
 export default SignIn;
