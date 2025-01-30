@@ -18,6 +18,7 @@ const SignIn = () => {
       email: "john@doe.com",
       mobile: "1234567890",
       token: "1234567890",
+      avatar: images.avatar,
     });
   };
 

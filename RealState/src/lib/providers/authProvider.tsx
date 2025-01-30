@@ -1,4 +1,5 @@
 import React, { createContext, useState, ReactNode } from "react";
+import { ImageSourcePropType } from "react-native";
 
 type user = {
   firstName: string;
@@ -6,6 +7,7 @@ type user = {
   email: string;
   mobile: string;
   token: string;
+  avatar: ImageSourcePropType;
 };
 
 export interface AuthType {
@@ -23,7 +25,7 @@ const AuthProvider = ({ children }: { children: ReactNode }) => {
   const login = async (data: user) => {
     try {
       setLoading(true);
-      console.log("logegd in user", data);
+      // console.log("logegd in user", data);
       setUser(data);
     } catch (error) {
       console.log(error);

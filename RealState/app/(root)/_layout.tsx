@@ -7,7 +7,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function AppLayout() {
   const { user, loading } = useContext<AuthType>(AuthContext as any);
 
-  console.log("user from main loyout", user);
+  // console.log("user from main loyout", user);
 
   if (loading) {
     return (
