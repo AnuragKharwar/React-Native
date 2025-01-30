@@ -171,7 +171,7 @@ export const dummyProperties = [
     address: "Chicago",
     price: "$1500/mo",
     image: images.newYork,
-    rating: "3",
+    rating: "3.6",
     category: "Apartments",
   },
   {
@@ -180,7 +180,7 @@ export const dummyProperties = [
     address: "San Diego",
     price: "$3200/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.8",
     category: "Villas",
   },
   {
@@ -189,7 +189,7 @@ export const dummyProperties = [
     address: "Denver",
     price: "$1800/mo",
     image: images.newYork,
-    rating: "2",
+    rating: "4.7",
     category: "Houses",
   },
   {
@@ -198,7 +198,7 @@ export const dummyProperties = [
     address: "Seattle",
     price: "$4800/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.0",
     category: "Apartments",
   },
   {
@@ -207,7 +207,7 @@ export const dummyProperties = [
     address: "Minneapolis",
     price: "$2200/mo",
     image: images.newYork,
-    rating: "3",
+    rating: "5.0",
     category: "Houses",
   },
   {
@@ -216,7 +216,7 @@ export const dummyProperties = [
     address: "Austin",
     price: "$1700/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.0",
     category: "Studios",
   },
   {
@@ -225,7 +225,7 @@ export const dummyProperties = [
     address: "Phoenix",
     price: "$1900/mo",
     image: images.newYork,
-    rating: "2",
+    rating: "3.9",
     category: "Houses",
   },
   {
@@ -234,7 +234,7 @@ export const dummyProperties = [
     address: "Malibu",
     price: "$5500/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.6",
     category: "Villas",
   },
   {
@@ -243,7 +243,7 @@ export const dummyProperties = [
     address: "San Francisco",
     price: "$6000/mo",
     image: images.newYork,
-    rating: "3",
+    rating: "3.5",
     category: "Villas",
   },
   {
@@ -252,7 +252,7 @@ export const dummyProperties = [
     address: "Nashville",
     price: "$1300/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.6",
     category: "Houses",
   },
   {
@@ -261,7 +261,7 @@ export const dummyProperties = [
     address: "Boston",
     price: "$3200/mo",
     image: images.newYork,
-    rating: "2",
+    rating: "3.6",
     category: "Townhomes",
   },
   {
@@ -270,7 +270,7 @@ export const dummyProperties = [
     address: "New York",
     price: "$5200/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.6",
     category: "Apartments",
   },
   {
@@ -279,7 +279,7 @@ export const dummyProperties = [
     address: "Portland",
     price: "$2100/mo",
     image: images.newYork,
-    rating: "3",
+    rating: "3.5",
     category: "Condos",
   },
   {
@@ -288,7 +288,7 @@ export const dummyProperties = [
     address: "Beverly Hills",
     price: "$12000/mo",
     image: images.japan,
-    rating: "2",
+    rating: "4.6",
     category: "Villas",
   },
   {
@@ -297,7 +297,7 @@ export const dummyProperties = [
     address: "Charleston",
     price: "$1400/mo",
     image: images.newYork,
-    rating: "2",
+    rating: "4.4",
     category: "Duplexes",
   },
   {
@@ -306,7 +306,7 @@ export const dummyProperties = [
     address: "Lake Tahoe",
     price: "$2800/mo",
     image: images.japan,
-    rating: "2",
+    rating: "3.9",
     category: "Others",
   },
 ];
